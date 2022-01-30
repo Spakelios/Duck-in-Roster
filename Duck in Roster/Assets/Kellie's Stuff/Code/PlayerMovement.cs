@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     private float horizontalInput;
     public GameObject duckie;
-    public Transform spawnPoint;
+    public GameObject duckie2;
 
     private void FixedUpdate()
     {
@@ -28,8 +28,25 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("drop"))
         {
             Destroy(other.gameObject);
-            Instantiate(duckie, spawnPoint.position, spawnPoint.rotation);
-            
+
+            if (ScoreManager.score == 1)
+            {
+                Instantiate(duckie, transform.position, transform.rotation);
+            }
+
+            /*
+            for (int i = 0; i < 10; i++)
+            {
+                Instantiate(duckie, transform.position, transform.rotation);
+                FollowTarget.offset = new Vector3(0, 0, i * -20f);
+            }
+            */
+
+            if (ScoreManager.score == 2)
+            {
+                Instantiate(duckie2, transform.position, transform.rotation);
+            }
+
         }
     }
 }

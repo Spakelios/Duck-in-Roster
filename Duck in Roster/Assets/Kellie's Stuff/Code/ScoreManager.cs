@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI Scoretext;
     public TextMeshProUGUI FinalScore;
 
-    private int score;
+    public static int score;
    
 
 
