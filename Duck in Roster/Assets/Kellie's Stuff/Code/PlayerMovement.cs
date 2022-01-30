@@ -8,11 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
     public Rigidbody rb;
     private float horizontalInput;
+    public GameObject duckie;
+    public Transform spawnPoint;
 
     private void FixedUpdate()
     {
-        Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
-        Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime;
+        Vector3 forwardMove = transform.forward * (speed * Time.fixedDeltaTime);
+        Vector3 horizontalMove = transform.right * (horizontalInput * speed * Time.fixedDeltaTime);
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
     }
 
@@ -26,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("drop"))
         {
             Destroy(other.gameObject);
-            //Instantiate(duck, transform.position, transform.rotation);
+            Instantiate(duckie, spawnPoint.position, spawnPoint.rotation);
             
         }
     }
