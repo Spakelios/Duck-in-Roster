@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
     public Rigidbody rb;
     private float horizontalInput;
-    
+
     private void FixedUpdate()
     {
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
@@ -18,5 +18,13 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Duck"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
