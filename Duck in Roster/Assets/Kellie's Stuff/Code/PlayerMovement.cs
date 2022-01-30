@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("drop"))
         {
             Destroy(other.gameObject);
-            Instantiate(duck, transform.position, transform.rotation);
+            //Instantiate(duck, transform.position, transform.rotation);
             
         }
     }
