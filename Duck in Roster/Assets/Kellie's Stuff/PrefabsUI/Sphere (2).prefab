@@ -29,7 +29,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4064670920761076777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 194}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 188.2976, y: 188.2976, z: 188.2976}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 652, y: -65}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &6672675456581764839
@@ -131,4 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 5116872341875436955, guid: 0383eafb526c663449765e987ad20080, type: 3}
-  offset: {x: -28.68, y: -19, z: -17.08}
+  offset: {x: -4, y: -60, z: -1500}
+  speed: 5
+  rb: {fileID: 482150841153950356}

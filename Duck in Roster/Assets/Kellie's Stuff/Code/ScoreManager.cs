@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -9,9 +10,10 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public TextMeshProUGUI Scoretext;
+    public TextMeshProUGUI FinalScore;
 
     private int score;
-
+   
 
 
     void Start()
@@ -22,6 +24,7 @@ public class ScoreManager : MonoBehaviour
         }
 
         Scoretext.text = score.ToString() ;
+        FinalScore.text = score.ToString();
 
 
     }
@@ -30,5 +33,7 @@ public class ScoreManager : MonoBehaviour
     {
         score += dropValue;
         Scoretext.text =  score.ToString() ;
+        FinalScore.text = score.ToString();
+        
     }
 }

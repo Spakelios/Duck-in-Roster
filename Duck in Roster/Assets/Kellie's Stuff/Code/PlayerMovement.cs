@@ -4,6 +4,7 @@ using UnityEngine.Rendering;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] public GameObject duck;
     public float speed = 5;
     public Rigidbody rb;
     private float horizontalInput;
@@ -20,11 +21,13 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Duck"))
+        if (other.gameObject.CompareTag("drop"))
         {
             Destroy(other.gameObject);
+            Instantiate(duck, transform.position, transform.rotation);
+            
         }
     }
 }
