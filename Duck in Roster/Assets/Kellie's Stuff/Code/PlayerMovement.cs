@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalInput;
     public GameObject duckie;
     public GameObject duckie2;
+    public GameObject duckie3;
 
     private void FixedUpdate()
     {
@@ -29,24 +30,26 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(other.gameObject);
 
-            if (ScoreManager.score == 1)
+            switch (ScoreManager.score)
             {
-                Instantiate(duckie, transform.position, transform.rotation);
-            }
-
-            /*
+                case 1:
+                    Instantiate(duckie, transform.position, transform.rotation);
+                    break;
+                /*
             for (int i = 0; i < 10; i++)
             {
                 Instantiate(duckie, transform.position, transform.rotation);
                 FollowTarget.offset = new Vector3(0, 0, i * -20f);
             }
             */
-
-            if (ScoreManager.score == 2)
-            {
-                Instantiate(duckie2, transform.position, transform.rotation);
+                case 2:
+                    Instantiate(duckie2, transform.position, transform.rotation);
+                    break;
+                
+                case 3:
+                    Instantiate(duckie3, transform.position, transform.rotation);
+                    break;
             }
-
         }
     }
 }
