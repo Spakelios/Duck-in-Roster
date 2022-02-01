@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     public TextMeshProUGUI Scoretext;
     public TextMeshProUGUI FinalScore;
-
+    public TextMeshProUGUI failedScore;
     public static int score;
    
 
@@ -25,6 +25,7 @@ public class ScoreManager : MonoBehaviour
 
         Scoretext.text = score.ToString() ;
         FinalScore.text = score.ToString();
+        failedScore.text = score.ToString();
 
 
     }
@@ -34,6 +35,7 @@ public class ScoreManager : MonoBehaviour
         score += dropValue;
         Scoretext.text =  score.ToString() ;
         FinalScore.text = score.ToString();
-        
+        failedScore.text = score.ToString();
+
     }
 }

@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private GameObject duckling1;
     private GameObject duckling2;
     private GameObject duckling3;
+    public GameObject deathScreen;
+    public GameObject ui;
 
     private void FixedUpdate()
     {
@@ -78,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
                 break;
             case -1:
                 Destroy(gameObject);
+                deathScreen.SetActive(true);
+                ui.SetActive(false);
                 break;
         }
     }
