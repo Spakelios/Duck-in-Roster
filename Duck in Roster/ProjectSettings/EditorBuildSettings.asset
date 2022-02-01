@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kellie's Stuff/Scenes/PROTOTYPE SPEED 1.unity
     guid: 89f6fd86f3f42ae41b655df775e25ad2
+  - enabled: 1
+    path: Assets/Kellie's Stuff/Scenes/PROTOTYPE SPEED 2.unity
+    guid: 647c3d09655f7f94899a6e6c270dfbe9
   m_configObjects: {}
