@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 horizontalMove = transform.right * (horizontalInput * speed * Time.fixedDeltaTime);
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
     }
-
+    
     private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
