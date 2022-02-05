@@ -19,7 +19,14 @@ public class NewGame : MonoBehaviour
 
     public void Scene3()
     {
-        SceneManager.LoadScene("PROTOTYPE SPEED 2");
+        SceneManager.LoadScene("SPEED");
     }
+
+    public void scene4()
+    {
+        SceneManager.LoadScene("Terrain");
+    }
+    
+    
 }
 
