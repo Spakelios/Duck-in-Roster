@@ -19,17 +19,28 @@ public class PlayerMovement : MonoBehaviour
     private GameObject duckling3;
     public GameObject deathScreen;
     public GameObject ui;
+    
 
+    
     private void FixedUpdate()
     {
+       
         Vector3 forwardMove = transform.forward * (speed * Time.fixedDeltaTime);
         Vector3 horizontalMove = transform.right * (horizontalInput * speed * Time.fixedDeltaTime);
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
+
+
+
     }
     
     private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
+        Vector3 pos = transform.position;
+        pos.x =  Mathf.Clamp(transform.position.x, -9f, 9f);
+        transform.position = pos;
+  
+        
     }
 
     private void OnTriggerEnter(Collider other)
