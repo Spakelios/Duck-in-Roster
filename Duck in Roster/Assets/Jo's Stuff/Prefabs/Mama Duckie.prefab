@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 5933919018650797422}
   - component: {fileID: 7030922194247390520}
   m_Layer: 0
-  m_Name: duckie (4)
+  m_Name: Mama Duckie
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

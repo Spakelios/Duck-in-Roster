@@ -9,11 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 806801293165529456, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
       propertyPath: offset.x
-      value: 33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 806801293165529456, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
       propertyPath: offset.z
-      value: -65
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 3580883530899863310, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
       propertyPath: m_RootOrder
