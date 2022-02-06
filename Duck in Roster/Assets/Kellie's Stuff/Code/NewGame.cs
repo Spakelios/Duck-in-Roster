@@ -26,7 +26,11 @@ public class NewGame : MonoBehaviour
     {
         SceneManager.LoadScene("Terrain");
     }
-    
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     
 }
 
