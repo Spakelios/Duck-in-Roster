@@ -13,7 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 806801293165529456, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
       propertyPath: offset.z
-      value: -14
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 806801293165529456, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3580883530899863310, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
       propertyPath: m_RootOrder
@@ -61,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4249720424413621684, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
       propertyPath: m_Name
-      value: duckie Variant 1 Variant Variant
+      value: Duckling 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
