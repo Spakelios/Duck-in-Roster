@@ -2615,8 +2615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duckling: {fileID: 4756035192006611991, guid: b972c1bfe97fff04cb40de15161d44d1, type: 3}
-  zPos: -3
-  creatingSection: 0
+  zPos: -6
+  ducklingPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1784368309
 GameObject:
   m_ObjectHideFlags: 0
