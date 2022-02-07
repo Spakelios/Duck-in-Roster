@@ -73,7 +73,8 @@ public class PlayerMovement : MonoBehaviour
                     break;
             }
         }
-
+        
+        //old duckling deletion stuff
         if (!other.CompareTag("Obstacle")) return;
         switch (ScoreManager.score)
         {
@@ -95,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
                 ui.SetActive(false);
                 break;
         }
+        
     }
 }
 

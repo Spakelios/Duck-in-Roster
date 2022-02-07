@@ -67,5 +67,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Duckling 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 806801293165529456, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8b26321c4dd136a42ab1e2b548352dc8, type: 3}
