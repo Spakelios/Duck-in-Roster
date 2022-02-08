@@ -8,6 +8,14 @@ public class EndScreen : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public AudioSource victoryTheme;
+    private PlayerMovement movementScript;
+    private AudioSource levelMusic;
+
+    private void Start()
+    {
+        levelMusic = movementScript.mainTheme;
+    }
 
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
@@ -23,6 +31,12 @@ public class EndScreen : MonoBehaviour
             }
             else
             {
+                /*
+                levelMusic.Stop();
+                levelMusic.loop = false;
+                victoryTheme.Play();
+                victoryTheme.loop = false;
+                */
                 Pause();
             }
         }

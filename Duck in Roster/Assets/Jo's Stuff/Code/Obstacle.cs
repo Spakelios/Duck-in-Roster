@@ -5,6 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public int damageOwie = -1;
+    public AudioSource ducklingLost;
 
     private void OnTriggerEnter(Collider other)
 
@@ -12,6 +13,7 @@ public class Obstacle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ScoreManager.instance.ChangeScore(damageOwie);
+            ducklingLost.Play();
         }
     }
 }

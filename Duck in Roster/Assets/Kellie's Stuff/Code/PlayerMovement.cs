@@ -20,9 +20,16 @@ public class PlayerMovement : MonoBehaviour
     private GameObject duckling3;
     public GameObject deathScreen;
     public GameObject ui;
-    
+    public AudioSource mainTheme;
+    public AudioSource gameOver;
 
-    
+    private void Start()
+    {
+        mainTheme.Play();
+        mainTheme.loop = true;
+    }
+
+
     private void FixedUpdate()
     {
         StartCoroutine(move());
@@ -98,21 +105,37 @@ public class PlayerMovement : MonoBehaviour
                 break;
             case -1:
                 Destroy(gameObject);
+                mainTheme.Stop();
+                mainTheme.loop = false;
+                gameOver.Play();
+                gameOver.loop = false;
                 deathScreen.SetActive(true);
                 ui.SetActive(false);
                 break;
             case -2:
                 Destroy(gameObject);
+                mainTheme.Stop();
+                mainTheme.loop = false;
+                gameOver.Play();
+                gameOver.loop = false;
                 deathScreen.SetActive(true);
                 ui.SetActive(false);
                 break;
             case -3:
                 Destroy(gameObject);
+                mainTheme.Stop();
+                mainTheme.loop = false;
+                gameOver.Play();
+                gameOver.loop = false;
                 deathScreen.SetActive(true);
                 ui.SetActive(false);
                 break;
             case -4:
                 Destroy(gameObject);
+                mainTheme.Stop();
+                mainTheme.loop = false;
+                gameOver.Play();
+                gameOver.loop = false;
                 deathScreen.SetActive(true);
                 ui.SetActive(false);
                 break;
