@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(other.gameObject);
 
+            //old duckling spawning code; correlates to score
             switch (ScoreManager.score)
             {
                 case 1 when duckie1Obtained == false:
