@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -24,14 +25,18 @@ public class PlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-       
+        StartCoroutine(move());
+        
+    }
+    
+    IEnumerator move ()
+    {
         Vector3 forwardMove = transform.forward * (speed * Time.fixedDeltaTime);
         Vector3 horizontalMove = transform.right * (horizontalInput * speed * Time.fixedDeltaTime);
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
-
-
-
+        yield return new WaitForSeconds(2);
     }
+
     
     private void Update()
     {
@@ -96,6 +101,22 @@ public class PlayerMovement : MonoBehaviour
                 deathScreen.SetActive(true);
                 ui.SetActive(false);
                 break;
+            case -2:
+                Destroy(gameObject);
+                deathScreen.SetActive(true);
+                ui.SetActive(false);
+                break;
+            case -3:
+                Destroy(gameObject);
+                deathScreen.SetActive(true);
+                ui.SetActive(false);
+                break;
+            case -4:
+                Destroy(gameObject);
+                deathScreen.SetActive(true);
+                ui.SetActive(false);
+                break;
+                
         }
         
     }
