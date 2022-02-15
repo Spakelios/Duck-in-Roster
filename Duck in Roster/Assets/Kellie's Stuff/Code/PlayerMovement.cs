@@ -9,15 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
     public Rigidbody rb;
     private float horizontalInput;
-    public GameObject duckie;
-    public GameObject duckie2;
-    public GameObject duckie3;
-    public bool duckie1Obtained = false;
-    public bool duckie2Obtained = false;
-    public bool duckie3Obtained = false;
-    private GameObject duckling1;
-    private GameObject duckling2;
-    private GameObject duckling3;
     public GameObject deathScreen;
     public GameObject ui;
     public AudioSource mainTheme;

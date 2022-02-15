@@ -18,6 +18,8 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
+        score = 0;
+        
         if (instance == null)
         {
             instance = this;
