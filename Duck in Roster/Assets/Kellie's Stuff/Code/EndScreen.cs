@@ -9,12 +9,17 @@ public class EndScreen : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public AudioSource victoryTheme;
-    private PlayerMovement movementScript;
-    private AudioSource levelMusic;
+    private GameObject gameplayTheme;
 
     private void Start()
     {
-        levelMusic = movementScript.mainTheme;
+        gameplayTheme = GameObject.Find("GameplayMusic");
+        gameplayTheme.SetActive(true);
+
+        if (GameIsPaused)
+        {
+            Resume();
+        }
     }
 
     // Update is called once per frame
@@ -31,12 +36,6 @@ public class EndScreen : MonoBehaviour
             }
             else
             {
-                /*
-                levelMusic.Stop();
-                levelMusic.loop = false;
-                victoryTheme.Play();
-                victoryTheme.loop = false;
-                */
                 Pause();
             }
         }
@@ -52,9 +51,12 @@ public class EndScreen : MonoBehaviour
     void Pause()
 
     {
+        gameplayTheme.SetActive(false);
+        victoryTheme.Play();
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        
     }
     
     

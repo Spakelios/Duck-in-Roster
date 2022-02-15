@@ -212,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.9847364
+      value: 6.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalPosition.y
@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.992554
+      value: 19.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2004,7 +2004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.0152636
+      value: -7.32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2012,7 +2012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.007446
+      value: -3.79
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fc50a493e9cb0143bd442ac4638bc19, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2682,7 +2682,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e4fe6f12846ba0a4facdcc72089420da, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a12c8bdd93ecd6f4ba95529e7a99f873, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3984,6 +3984,22 @@ PrefabInstance:
       propertyPath: ducklingCollected
       value: 
       objectReference: {fileID: 1896503413}
+    - target: {fileID: 7098789580205256589, guid: 0cadbab5ae7cd9b41adbb7dee5cf94e4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098789580481019642, guid: 0cadbab5ae7cd9b41adbb7dee5cf94e4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622385454386558263, guid: 0cadbab5ae7cd9b41adbb7dee5cf94e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622385454386558263, guid: 0cadbab5ae7cd9b41adbb7dee5cf94e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.35
+      objectReference: {fileID: 0}
     - target: {fileID: 7945086769814269442, guid: 0cadbab5ae7cd9b41adbb7dee5cf94e4, type: 3}
       propertyPath: ducklingLost
       value: 

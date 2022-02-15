@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         mainTheme.Play();
         mainTheme.loop = true;
+        ScoreManager.score = 0;
     }
 
 
@@ -62,19 +63,20 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
 
             //old duckling spawning code; correlates to score
+            /*
             switch (ScoreManager.score)
             {
                 case 1 when duckie1Obtained == false:
                     duckling1 = Instantiate(duckie, transform.position, transform.rotation);
                     duckie1Obtained = true;
                     break;
-                /*
+                
             for (int i = 0; i < 10; i++)
             {
                 Instantiate(duckie, transform.position, transform.rotation);
                 FollowTarget.offset = new Vector3(0, 0, i * -20f);
             }
-            */
+            
                 case 2 when duckie2Obtained == false:
                     duckling2 = Instantiate(duckie2, transform.position, transform.rotation);
                     duckie2Obtained = true;
@@ -85,8 +87,10 @@ public class PlayerMovement : MonoBehaviour
                     duckie3Obtained = true;
                     break;
             }
+            */
         }
         
+        /*
         //old duckling deletion stuff
         if (!other.CompareTag("Obstacle")) return;
         switch (ScoreManager.score)
@@ -141,8 +145,20 @@ public class PlayerMovement : MonoBehaviour
                 break;
                 
         }
-        
+       */
+
+        if (ScoreManager.score <= -1)
+        {
+            Destroy(gameObject);
+            mainTheme.Stop();
+            mainTheme.loop = false;
+            gameOver.Play();
+            gameOver.loop = false;
+            deathScreen.SetActive(true);
+            ui.SetActive(false);
+        }
     }
+    
 }
 
     
